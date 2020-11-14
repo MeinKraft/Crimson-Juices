@@ -20,7 +20,7 @@ public class ItemJuicePumpkin extends Item {
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
                         .hunger(8)
-                        .saturation(9)
+                        .saturation(0.5f)
                         .build())
             );
         }

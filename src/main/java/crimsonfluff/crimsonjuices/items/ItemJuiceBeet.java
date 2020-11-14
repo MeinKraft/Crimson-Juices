@@ -19,8 +19,8 @@ public class ItemJuiceBeet extends Item {
         super(new Properties()
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
-                        .hunger(4)
-                        .saturation(5)
+                        .hunger(2)
+                        .saturation(1.0f)
                         .build())
             );
         }

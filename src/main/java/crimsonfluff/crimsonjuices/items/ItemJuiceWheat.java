@@ -20,7 +20,7 @@ public class ItemJuiceWheat extends Item {
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
                         .hunger(4)
-                        .saturation(4)
+                        .saturation(0.5f)
                         .build())
             );
         }

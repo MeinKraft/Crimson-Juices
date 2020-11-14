@@ -23,7 +23,11 @@
   "item.crimsonjuices.juice_melon": "Melon Juice",
   "item.crimsonjuices.juice_potato": "Potato Juice",
   "item.crimsonjuices.juice_pumpkin": "Pumpkin Juice",
-  "item.crimsonjuices.juice_sweetberry": "Sweetberry Juice",
+  "item.crimsonjuices.juice_sweetberry": "Sweet Berry Juice",
   "item.crimsonjuices.juice_wheat": "Wheat Juice",
-  "item.crimsonjuices.cookie_chorus": "Chorus Cookie"
+  "item.crimsonjuices.cookie_chorus": "Chorus Cookie",
+  "item.crimsonjuices.jelly_bean_green": "Green Jelly Bean",
+  "item.crimsonjuices.jelly_bean_yellow": "Yellow Jelly Bean",
+  "item.crimsonjuices.jelly_bean_blue": "Blue Jelly Bean",
+  "item.crimsonjuices.jelly_bean_red": "Red Jelly Bean"
 }

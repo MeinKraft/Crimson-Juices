@@ -19,8 +19,8 @@ public class ItemJuiceApple extends Item {
         super(new Properties()
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
-                        .hunger(8)
-                        .saturation(6)
+                        .hunger(4)
+                        .saturation(0.75f)
                         .build())
             );
         }

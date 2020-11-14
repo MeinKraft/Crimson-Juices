@@ -19,8 +19,8 @@ public class ItemJuiceChorus extends Item {
         super(new Properties()
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
-                        .hunger(8)
-                        .saturation(10)
+                        .hunger(2)
+                        .saturation(1.5f)
                         .build())
             );
         }

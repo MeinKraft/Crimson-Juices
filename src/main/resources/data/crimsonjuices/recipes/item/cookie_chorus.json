@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ],
+  "result": {
+    "item": "crimsonjuices:cookie_chorus"
+  }
+}
