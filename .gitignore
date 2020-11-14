@@ -1,14 +1,42 @@
+# IntelliJ
+/*.iml
+.idea/
+*.ipr
+*.iws
+.idea_modules/
+out/
+
+# Gradle
 .gradle
-/build/
+build/
+run/
+logs/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# Eclipse + other common
+*.pydevproject
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+*.launch
+eclipse/
+libs/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Cache of project
-.gradletasknamecache
+# Mac crap
+.DS_Store
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+# Data gen cache
+/src/datagen/generated/.cache
