@@ -12,4 +12,4 @@ Questions, comments and advice is greatly welcome, but speak slow, I am a new
 
 I best learn by example, so any simple code snippets are greatly welcome
 
-"Anything can be squeezed with a big enough squeezer"
+"Anything can be juiced with a big enough squeezer"
