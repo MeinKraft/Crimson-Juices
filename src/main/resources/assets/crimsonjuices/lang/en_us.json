@@ -1,0 +1,29 @@
+{
+  "itemGroup.crimsonjuices":  "Crimson Juices",
+
+  "tip.crimsonjuices.bean": "\u00A7eAn edible sugary jelly bean treat",
+
+  "tip.crimsonjuices.juice.apple": "§eA cidery juice of fruity goodness",
+  "tip.crimsonjuices.juice.beet": "§eBeaten to perfection",
+  "tip.crimsonjuices.juice.cactus": "§eA juice with a prickly after taste",
+  "tip.crimsonjuices.juice.carrot": "§eIf its good enough for the fluffy white tails",
+  "tip.crimsonjuices.juice.chorus": "§eAunty Mary 'ad a Canary up the leg of her dress...",
+  "tip.crimsonjuices.juice.melon": "§eWater Melone !",
+  "tip.crimsonjuices.juice.potato": "§eRoc Vodka",
+  "tip.crimsonjuices.juice.pumpkin": "§ePumpkins for wearing not drinking",
+  "tip.crimsonjuices.juice.sweetberry": "§eBerries of sweet juicy juice",
+  "tip.crimsonjuices.juice.wheat": "§eNot as potent as Hops",
+  "tip.crimsonjuices.cookie.chorus": "§eA delicious End cookie",
+
+  "item.crimsonjuices.juice_apple": "Apple Juice",
+  "item.crimsonjuices.juice_beet": "Beetroot Juice",
+  "item.crimsonjuices.juice_cactus": "Cactus Juice",
+  "item.crimsonjuices.juice_carrot": "Carrot Juice",
+  "item.crimsonjuices.juice_chorus": "Chorus Juice",
+  "item.crimsonjuices.juice_melon": "Melon Juice",
+  "item.crimsonjuices.juice_potato": "Potato Juice",
+  "item.crimsonjuices.juice_pumpkin": "Pumpkin Juice",
+  "item.crimsonjuices.juice_sweetberry": "Sweetberry Juice",
+  "item.crimsonjuices.juice_wheat": "Wheat Juice",
+  "item.crimsonjuices.cookie_chorus": "Chorus Cookie"
+}
