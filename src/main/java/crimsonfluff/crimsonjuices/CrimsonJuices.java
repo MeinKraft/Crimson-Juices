@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 public class CrimsonJuices
 {
     public static final String MOD_ID = "crimsonjuices";
-    public static final Logger LOGGER = LogManager.getLogger("crimsonjuices");
+    //public static final Logger LOGGER = LogManager.getLogger("crimsonjuices");
     final IEventBus MOD_EVENTBUS = FMLJavaModLoadingContext.get().getModEventBus();
 
     public CrimsonJuices() {

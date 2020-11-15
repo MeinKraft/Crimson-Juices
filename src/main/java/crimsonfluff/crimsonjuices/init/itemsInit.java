@@ -31,4 +31,8 @@ public class itemsInit {
 
     // Cookies
     public static final RegistryObject<Item> CHORUS_COOKIE = ITEMS.register("cookie_chorus", ItemChorusCookie::new);
+
+    // Water
+    public static final RegistryObject<Item> REDSTONE_WATER = ITEMS.register("water_redstone", ItemRedstoneWater::new);
+    public static final RegistryObject<Item> SUGAR_WATER = ITEMS.register("water_sugar", ItemSugarWater::new);
 }

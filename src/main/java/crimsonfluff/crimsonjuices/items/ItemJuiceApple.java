@@ -2,15 +2,17 @@ package crimsonfluff.crimsonjuices.items;
 
 import crimsonfluff.crimsonjuices.CrimsonJuices;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.UseAction;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.*;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.items.ItemHandlerHelper;
 
 import java.util.List;
 
@@ -37,5 +39,17 @@ public class ItemJuiceApple extends Item {
         tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".juice.apple")));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
+    @Override
+    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
+    {
+        if(entityLiving instanceof PlayerEntity)
+        {
+            PlayerEntity player = (PlayerEntity) entityLiving;
+            //entityLiving.addPotionEffect(new EffectInstance(Effects.POISON, 1200, 0, false, true));
+            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.GLASS_BOTTLE));
+        }
+        return super.onItemUseFinish(stack, worldIn, entityLiving);
     }
 }

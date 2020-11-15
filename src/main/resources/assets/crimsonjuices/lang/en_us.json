@@ -6,14 +6,16 @@
   "tip.crimsonjuices.juice.apple": "§eA cidery juice of fruity goodness",
   "tip.crimsonjuices.juice.beet": "§eBeaten to perfection",
   "tip.crimsonjuices.juice.cactus": "§eA juice with a prickly after taste",
-  "tip.crimsonjuices.juice.carrot": "§eIf its good enough for the fluffy white tails",
+  "tip.crimsonjuices.juice.carrot": "§eIts good enough for the fluffy white tails",
   "tip.crimsonjuices.juice.chorus": "§eAunty Mary 'ad a Canary up the leg of her dress...",
   "tip.crimsonjuices.juice.melon": "§eWater Melone !",
   "tip.crimsonjuices.juice.potato": "§eRoc Vodka",
   "tip.crimsonjuices.juice.pumpkin": "§ePumpkins for wearing not drinking",
   "tip.crimsonjuices.juice.sweetberry": "§eBerries of sweet juicy juice",
-  "tip.crimsonjuices.juice.wheat": "§eNot as potent as Hops",
+  "tip.crimsonjuices.juice.wheat": "§eNot as potent as hops",
   "tip.crimsonjuices.cookie.chorus": "§eA delicious End cookie",
+  "tip.crimsonjuices.water.sugar": "§eAdds Speed effect",
+  "tip.crimsonjuices.water.redstone": "§eAdds Haste effect",
 
   "item.crimsonjuices.juice_apple": "Apple Juice",
   "item.crimsonjuices.juice_beet": "Beetroot Juice",
@@ -29,5 +31,7 @@
   "item.crimsonjuices.jelly_bean_green": "Green Jelly Bean",
   "item.crimsonjuices.jelly_bean_yellow": "Yellow Jelly Bean",
   "item.crimsonjuices.jelly_bean_blue": "Blue Jelly Bean",
-  "item.crimsonjuices.jelly_bean_red": "Red Jelly Bean"
+  "item.crimsonjuices.jelly_bean_red": "Red Jelly Bean",
+  "item.crimsonjuices.water_sugar": "Sugar Water",
+  "item.crimsonjuices.water_redstone": "Redstone Water"
 }

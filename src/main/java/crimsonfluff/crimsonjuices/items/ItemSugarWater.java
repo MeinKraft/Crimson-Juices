@@ -5,6 +5,8 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -14,13 +16,13 @@ import net.minecraftforge.items.ItemHandlerHelper;
 
 import java.util.List;
 
-public class ItemJuiceBeet extends Item {
-    public ItemJuiceBeet() {
+public class ItemSugarWater extends Item {
+    public ItemSugarWater() {
         super(new Properties()
                 .group(CrimsonJuices.TAB)
                 .food(new Food.Builder()
-                        .hunger(2)
-                        .saturation(1.0f)
+                        .hunger(4)
+                        .saturation(0.75f)
                         .build())
             );
         }
@@ -34,7 +36,7 @@ public class ItemJuiceBeet extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".juice.beet")));
+        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".water.sugar")));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
@@ -45,6 +47,7 @@ public class ItemJuiceBeet extends Item {
         if(entityLiving instanceof PlayerEntity)
         {
             PlayerEntity player = (PlayerEntity) entityLiving;
+            entityLiving.addPotionEffect(new EffectInstance(Effects.SPEED, 1200, 0, false, true));
             ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.GLASS_BOTTLE));
         }
         return super.onItemUseFinish(stack, worldIn, entityLiving);

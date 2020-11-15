@@ -2,17 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:slime_ball"
+      "item": "minecraft:glass_bottle"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:yellow_dye"
+      "item": "minecraft:sugar"
     }
   ],
   "result": {
-    "item": "crimsonjuices:jelly_bean_yellow",
-    "count": 4
+    "item": "crimsonjuices:water_sugar"
   }
 }
