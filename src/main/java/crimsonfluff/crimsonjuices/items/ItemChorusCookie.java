@@ -27,7 +27,7 @@ public class ItemChorusCookie extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".cookie.chorus")));
+        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".cookie.chorus")));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }

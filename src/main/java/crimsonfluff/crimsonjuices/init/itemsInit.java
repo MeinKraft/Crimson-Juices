@@ -10,7 +10,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class itemsInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CrimsonJuices.MOD_ID);
 
-    // Items
     // Jelly Beans
     public static final RegistryObject<Item> BEAN_GREEN = ITEMS.register("jelly_bean_green", ItemBean::new);
     public static final RegistryObject<Item> BEAN_BLUE = ITEMS.register("jelly_bean_blue", ItemBean::new);

@@ -36,19 +36,17 @@ public class ItemSugarWater extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".water.sugar")));
+        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".water.sugar")));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
-    {
-        if(entityLiving instanceof PlayerEntity)
-        {
-            PlayerEntity player = (PlayerEntity) entityLiving;
+    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
+        if (entityLiving instanceof PlayerEntity) {
+            //PlayerEntity player = (PlayerEntity) entityLiving;
             entityLiving.addPotionEffect(new EffectInstance(Effects.SPEED, 1200, 0, false, true));
-            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.GLASS_BOTTLE));
+            ItemHandlerHelper.giveItemToPlayer((PlayerEntity) entityLiving, new ItemStack(Items.GLASS_BOTTLE));
         }
         return super.onItemUseFinish(stack, worldIn, entityLiving);
     }

@@ -34,19 +34,15 @@ public class ItemJuiceBeet extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID+".juice.beet")));
+        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".juice.beet")));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
-    {
-        if(entityLiving instanceof PlayerEntity)
-        {
-            PlayerEntity player = (PlayerEntity) entityLiving;
-            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.GLASS_BOTTLE));
-        }
+    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
+        if (entityLiving instanceof PlayerEntity) ItemHandlerHelper.giveItemToPlayer((PlayerEntity) entityLiving, new ItemStack(Items.GLASS_BOTTLE));
+
         return super.onItemUseFinish(stack, worldIn, entityLiving);
     }
 }
