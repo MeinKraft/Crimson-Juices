@@ -23,6 +23,7 @@ public class ItemRedstoneWater extends Item {
                 .food(new Food.Builder()
                         .hunger(4)
                         .saturation(0.75f)
+                        .effect(()-> new EffectInstance(Effects.HASTE,1200, 0, false, true), 1f)
                         .build())
             );
         }
@@ -43,10 +44,9 @@ public class ItemRedstoneWater extends Item {
 
     @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-        if (entityLiving instanceof PlayerEntity) {
-            entityLiving.addPotionEffect(new EffectInstance(Effects.HASTE, 1200, 0, false, true));
+        if (entityLiving instanceof PlayerEntity)
             ItemHandlerHelper.giveItemToPlayer((PlayerEntity) entityLiving, new ItemStack(Items.GLASS_BOTTLE));
-        }
+
         return super.onItemUseFinish(stack, worldIn, entityLiving);
     }
 }
