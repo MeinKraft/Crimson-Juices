@@ -6,6 +6,7 @@ import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,7 +28,7 @@ public class ItemChorusCookie extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".cookie.chorus")));
+        tooltip.add(new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".cookie.chorus").mergeStyle(TextFormatting.YELLOW));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }

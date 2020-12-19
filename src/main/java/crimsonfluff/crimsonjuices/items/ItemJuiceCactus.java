@@ -6,6 +6,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,7 +35,7 @@ public class ItemJuiceCactus extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".juice.cactus")));
+        tooltip.add(new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".juice.cactus").mergeStyle(TextFormatting.YELLOW));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }

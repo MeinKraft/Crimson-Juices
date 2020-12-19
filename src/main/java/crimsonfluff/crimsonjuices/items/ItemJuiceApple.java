@@ -5,9 +5,8 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,7 +35,7 @@ public class ItemJuiceApple extends Item {
     @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        tooltip.add((new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".juice.apple")));
+        tooltip.add(new TranslationTextComponent("tip." + CrimsonJuices.MOD_ID + ".juice.apple").mergeStyle(TextFormatting.YELLOW));
 
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
